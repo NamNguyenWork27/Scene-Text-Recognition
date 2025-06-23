@@ -10,7 +10,7 @@ A typical Scene Text Recognition process consists of two main stages:
 - Detector: Locate text blocks in images.
 - Recognizer: Decode text at identified locations.
 
-![Pipeline](Images\two_stage_approach.png)
+![Pipeline](Images/two_stage_approach.png)
 
 In this project, I will develop a Text Recognition in Images program using YOLOv11 (for text detection) and CRNN (for character recognition). The input and output of the program are as follows:
 - Input: An image containing text.
@@ -23,16 +23,16 @@ In this project, I will develop a Text Recognition in Images program using YOLOv
 
 2. Setting up the Text Detection module: In this module, we will build a program that receives an input image and returns the coordinates surrounding all the text in the image. Specifically, we will use YOLOv11 to do this job. Input/output of this problem in the following figure:
 
-    ![Text_Detection](Images\Input_Output_Detection.png)
+    ![Text_Detection](Images/Input_Output_Detection.png)
 
 3. Install Text Recognition module: In this module, we will build a program
 that receives an image containing only text and returns the text content as a string. Input and output (I/O) of this problem in more detail in the image below:
 
-    ![Text_Recognition](Images\Input_Output_Text_Recognition.png)
+    ![Text_Recognition](Images/Input_Output_Text_Recognition.png)
 
     To solve this problem, we will choose the Convolutional Recurrent Neural Networks (CRNN) model, a basic but effective model. This is one of the first models developed to solve data problems that are both image and sequence. The structure of the CRNN model is as follows:
 
-    ![CRNN_Model](Images\CRNN.png)
+    ![CRNN_Model](Images/CRNN.png)
 
     This model combines CNN (Convolutional Neural Networks) and RNN (Recurrent Neural Networks) to extract features from images and text strings in images. At the same time, CRNN also uses a special loss function, CTC Loss, to improve the model's results.
 
@@ -42,7 +42,7 @@ that receives an image containing only text and returns the text content as a st
 # Results 
 Some results of the model: 
 
-![Results](Images\Results.png)
+![Results](Images/Results.png)
 
 ---
 
